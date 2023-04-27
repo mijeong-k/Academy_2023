@@ -10,17 +10,16 @@ public class p75 {
 		
 //		char c4 = c2 + 1;
 
-//		char 타입에 작은따옴표를 하면 리터럴임=상수로 인식=아스키코드(상수)로 자동변환
-//		따라서 65+1 과 같은 값이 되는 거고, 'A' + 1이 int로 변환되는건 아님
-//		c2는 리터럴로 인식되게끔 ''를 써주지 않았기 때문에 문자도 아니고, 
-//		리터럴도 아니기 때문에 오류남. 리터럴로 바꾸려해도 c2가 문자열이라 안됨.
-//		문자만 리터럴로 할 수 있음
+//		char 타입에 작은따옴표를 하면 문자리터럴. 
+//		char 2byte 타입 + int 4byte 타입 = int 타입으로 계산.
+//		따라서 문자리터럴을 아스키코드로 변환하여 int 로 인식하여 계산.
+//		다만 , char 타입으로 선언하였기 때문에 출력값은 char로 출력 (B)
+//		char c4 = c2 +1 ; 에서 
+//		c2는 문자리터럴도 아니고, 정수리터럴도 아니고, 문자열 리터럴도 아니라서 오류. 
 		
 		System.out.println("c1 : " + c1);
 		System.out.println("c2 : " + c2);
-		System.out.println("c3 : " + c3);
-		
-		
+		System.out.println("c3 : " + c3);				
 		System.out.printf("%d\n", (int)c2);
 		System.out.printf("%c\n", c2);
 	}
