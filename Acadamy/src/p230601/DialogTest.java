@@ -43,7 +43,12 @@ public class DialogTest extends WindowAdapter {
 
 
 	public void windowClosing(WindowEvent e) {		
-		info.dispose();
+		if(e.getComponent() == info) {
+			info.dispose();
+		}else {
+			System.exit(0);
+		}
+		
 	}
 	
 	public static void main(String[] args) {
