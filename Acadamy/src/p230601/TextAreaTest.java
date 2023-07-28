@@ -10,7 +10,7 @@ public class TextAreaTest {
         f.setSize(400, 220);
         f.setLayout(new FlowLayout());
  
-        TextArea comments = new TextArea("하고 싶은 말을 적으세요!", 10, 50);
+        TextArea comments = new TextArea("하고 싶은 말을 적으세요!", 1, 25);
  
         f.add(comments);
         comments.selectAll();
